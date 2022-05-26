@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-size: 42px;
 }
 
 .name {
@@ -26,12 +27,12 @@
     padding: 5px;
 }
 
-.right {
-    align-self: flex-end;
-    background-color: lightblue;
-}
-
 .left {
     align-self: flex-start;
     background-color: burlywood;
+}
+
+.right {
+    align-self: flex-end;
+    background-color: lightblue;
 }
