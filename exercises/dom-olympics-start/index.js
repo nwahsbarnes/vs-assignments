@@ -18,7 +18,7 @@ childHeader.append(headerName, headerNameMessage);
 header.append(childHeader);
 
 // Replace current messages with random ones
-const messages = document.querySelectorAll(".messages > div");
+let messages = document.querySelectorAll(".messages > div");
 for (var element of messages) {
     element.textContent = getRandomMessage();
 }
@@ -44,6 +44,7 @@ const clearButton = document.getElementById("clear-button");
 clearButton.addEventListener("click", clearMessages);
 // Clear button functionality to remove messages
 function clearMessages() {
+    messages = document.querySelectorAll(".messages > div");
     for (var element of messages) {
         element.remove();
     }
