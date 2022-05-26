@@ -113,5 +113,6 @@ function addMessage(str) {
         newMessage.classList.add("right");
     }
     messageContainer.append(newMessage);
+    applyTheme();
     count++;
 }
