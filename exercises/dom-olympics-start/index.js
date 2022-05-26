@@ -55,21 +55,34 @@ function changeTheme() {
     const messagesLeft = document.querySelectorAll(".message.left");
     const messagesRight = document.querySelectorAll(".message.right");
     switch (themeSelection.value) {
-        case "theme-one":
+        case "theme-one": // brown/blue
             for (var element of messagesLeft) {
+                element.style.color = "black";
                 element.style.backgroundColor = "burlywood";
             }
             for (var element of messagesRight) {
+                element.style.color = "black";
                 element.style.backgroundColor = "aliceblue";
             }
             return;
-        case "theme-two":
+        case "theme-two": // red/black
             for (var element of messagesLeft) {
+                element.style.color = "black";
                 element.style.backgroundColor = "red";
             }
             for (var element of messagesRight) {
                 element.style.color = "white";
                 element.style.backgroundColor = "black";
+            }
+            return;
+        case "theme-three": // pink/purple
+            for (var element of messagesLeft) {
+                element.style.color = "black";
+                element.style.backgroundColor = "pink";
+            }
+            for (var element of messagesRight) {
+                element.style.color = "white";
+                element.style.backgroundColor = "purple";
             }
             return;
     }
