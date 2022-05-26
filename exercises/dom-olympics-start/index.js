@@ -51,9 +51,9 @@ function clearMessages() {
 
 // Add theme selection (option selection) event listener
 const themeSelection = document.getElementById("theme-drop-down");
-themeSelection.addEventListener("change", changeTheme);
+themeSelection.addEventListener("change", applyTheme);
 // Function to change the message properties based on the theme selected
-function changeTheme() {
+function applyTheme() {
     const messagesLeft = document.querySelectorAll(".message.left");
     const messagesRight = document.querySelectorAll(".message.right");
     switch (themeSelection.value) {
@@ -88,4 +88,30 @@ function changeTheme() {
             }
             return;
     }
+}
+
+const sendButton = document.getElementById("sendButton");
+const input = document.getElementById("input");
+sendButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    addMessage(input.value);
+});
+let count = 0;
+const messageContainer = document.querySelector(".messages");
+function addMessage(str) {
+    const newMessage = document.createElement("div");
+    if (str !== "") {
+        newMessage.textContent = str;
+    } else {
+        newMessage.textContent = getRandomMessage();
+    }
+    // Put message on the left
+    newMessage.classList.add("message");
+    if (count % 2 === 0) {
+        newMessage.classList.add("left");
+    } else { // Put message on the right
+        newMessage.classList.add("right");
+    }
+    messageContainer.append(newMessage);
+    count++;
 }
