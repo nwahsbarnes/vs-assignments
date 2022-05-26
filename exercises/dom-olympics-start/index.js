@@ -39,18 +39,20 @@ function getRandomMessage() {
     }
 }
 
+// Add clear button event listener
+const clearButton = document.getElementById("clear-button");
+clearButton.addEventListener("click", clearMessages);
 // Clear button functionality to remove messages
 function clearMessages() {
     for (var element of messages) {
         element.remove();
     }
 }
-// Add clear button event listener
-const clearButton = document.getElementById("clear-button");
-clearButton.addEventListener("click", clearMessages);
 
-// Theme selection functionality
+// Add theme selection (option selection) event listener
 const themeSelection = document.getElementById("theme-drop-down");
+themeSelection.addEventListener("change", changeTheme);
+// Function to change the message properties based on the theme selected
 function changeTheme() {
     const messagesLeft = document.querySelectorAll(".message.left");
     const messagesRight = document.querySelectorAll(".message.right");
@@ -87,4 +89,3 @@ function changeTheme() {
             return;
     }
 }
-themeSelection.addEventListener("change", changeTheme);
