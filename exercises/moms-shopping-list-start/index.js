@@ -1,13 +1,15 @@
 const input = document.getElementById("title");
-const groceryList = document.getElementById("groceryList");
+const groceryList = document.getElementById("list");
 
 /**
  * Form submit event listener
  */
 document.addItem.addEventListener("submit", function(event) {
     event.preventDefault();
-    addListItem(input.value);
-    input.value = "";
+    if (input.value !== "") {
+        addListItem(input.value);
+        input.value = "";
+    }
 });
 
 /**
@@ -30,6 +32,7 @@ function addListItem(item) {
         // Create the edit input element
         const editInput = document.createElement("input"); // Defaults to type="text"
         editInput.placeholder = "editing " + "'" + item + "'";
+        editInput.classList.add("input");
         // Add input element and remove previous item name
         newListItem.prepend(editInput);
         newListItem.removeChild(itemName);
@@ -72,7 +75,9 @@ function loadGroceryItems() {
         const groceryListString = sessionStorage.getItem("groceryList");
         if (groceryListString !== null) {
             for (let element of groceryListString.split(",")) {
-                addListItem(element);
+                if (element !== "") {
+                    addListItem(element);
+                }
             }
             hasLoadedGroceryItems = true;
         }

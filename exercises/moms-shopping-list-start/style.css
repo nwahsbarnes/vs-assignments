@@ -31,7 +31,7 @@
     display: flex;
 }
 
-#list > li{
+#list > li {
     list-style-type: none;
     margin: 10px auto;
 }
