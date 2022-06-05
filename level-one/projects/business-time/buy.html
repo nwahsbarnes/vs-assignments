@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gary's Gold Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bangers'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="styles/buy.css">
+</head>
+<header class="main-header">
+    <h1><a href="index.html">Gary's Gold Shop</a></h1>
+    <nav class="navbar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="mission.html" class="nav-item">Our Mission</a>
+        <a href="buy.html" class="nav-item nav-active">Buy Now</a>
+    </nav>
+</header>
+
+<body>
+    <div class="wrapper">
+        <main class="flex-container">
+            <form name="buy-form">
+                <h1>Buy Form:</h1>
+
+                <div class="name-section">
+                    <div class="first-name">
+                        <label for="firstName">First name:</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div>
+                        <label for="lastName">Last name:</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                </div>
+
+                <div class="email-section">
+                    <label for="email">Email:</label>
+                    <input name="email" type="email" id="email">
+                </div>
+
+                <div class="phone-section">
+                    <label for="phoneNumber">Phone:</label>
+                    <input name="phoneNumber" type="tel" id="phoneNumber">
+                </div>
+
+                <div class="comments-section">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" rows="4" cols="50"></textarea>
+                </div>
+                <button class="send">Send</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

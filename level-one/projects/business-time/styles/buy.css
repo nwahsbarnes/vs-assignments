@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Bangers, 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+    color: #0D3B66;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.name-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+
+.email-section, .phone-section, .comments-section {
+    display: flex;
+    gap: 5px;
+}
+
+.email-section > input,
+.phone-section > input,
+.comments-section > textarea {
+    flex: 1;
+}
+
+button.send {
+    align-self: flex-end;
+    margin-top: 35px;
+    padding: 5px;
+    width: 85px;
+}
