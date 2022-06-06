@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+}
+
+.red {
+    background-color: red;
+    grid-column: 1 / 7;
+}
+
+.blue {
+    background-color: blue;
+    grid-column: 7 / -1;
+}
+
+.green {
+    background-color: green;
+    grid-column: 1 / 4;
+}
+
+.purple {
+    background-color: purple;
+    grid-column: 4 / -1;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-column: 1 / -1;
+}
+
+.box {
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+}

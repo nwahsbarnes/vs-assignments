@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.red {
+    background-color: red;
+    height: 100px;
+    grid-column: 1 / -1;
+}
+
+.blue {
+    background-color: blue;
+    grid-column: 1 / 4;
+    grid-row: 2 / -1;
+}
+
+.green {
+    background-color: green;
+    grid-column: 4 / -1;
+}
+
+.purple {
+    background-color: purple;
+    grid-column: 4 / 8;
+}
+
+.yellow {
+    background-color: purple;
+    grid-column: 8 / 13;
+}
+
+.box {
+    width: auto;
+    border-radius: 5px;
+}
