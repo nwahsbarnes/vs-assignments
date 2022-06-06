@@ -1,6 +1,6 @@
 .flex-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 h1 {
@@ -12,22 +12,17 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-top: 50px;
     gap: 20px;
 }
 
 .name-section {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     gap: 15px;
 }
 
-
 .email-section, .phone-section, .comments-section {
     display: flex;
-    gap: 5px;
 }
 
 .email-section > input,
