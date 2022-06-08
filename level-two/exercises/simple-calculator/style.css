@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+    background-color: #1B4965;
+    font-family: "Poppins", sans-serif;
+    color: snow;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.header {
+    margin-bottom: 0px;
+}
+
+.operation-container {
+    border-radius: 3px;
+    padding: 1px 10px 10px 10px;
+    margin: 10px;
+    width: 500px;
+}
+
+.add-container {
+    background-color: rgba(190, 233, 232, 0.55);
+}
+
+.subtract-container {
+    background-color: rgba(202, 233, 255, 0.55);
+}
+
+.multiply-container {
+    background-color: rgba(95, 168, 211, 0.55);
+
+}

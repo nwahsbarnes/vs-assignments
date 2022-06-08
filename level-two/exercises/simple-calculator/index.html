@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <main class="flex-container">
+        <div class="add-container operation-container">
+            <h2 class="header">Add:</h2>
+            <form name="add-form">
+                <div>
+                    <input type="number" name="add-num1">
+                    <span>+</span>
+                    <input type="number" name="add-num2">
+                    <span>=</span>
+                    <span id="add-answer"></span>
+                </div>
+                <button id="add-submit-button">Calc</button>
+            </form>
+        </div>
+
+        <div class="subtract-container operation-container">
+            <h2 class="header">Subtract:</h2>
+            <form name="subtract-form">
+                <div>
+                    <input type="number" name="subtract-num1">
+                    <span>-</span>
+                    <input type="number" name="subtract-num2">
+                    <span>=</span>
+                    <span id="subtract-answer"></span>
+                </div>
+                <button id="subtract-submit-button">Calc</button>
+            </form>
+        </div>
+
+        <div class="multiply-container operation-container">
+            <h2 class="header">Multiply:</h2>
+            <form name="multiply-form">
+                <div>
+                    <input type="number" name="multiply-num1">
+                    <span>x</span>
+                    <input type="number" name="multiply-num2">
+                    <span>=</span>
+                    <span id="multiply-answer"></span>
+                </div>
+                <button id="multiply-submit-button">Calc</button>
+            </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
