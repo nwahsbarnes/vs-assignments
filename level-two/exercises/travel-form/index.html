@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="flex-container">
+            <h1 class="travel-header">Travel Form</h1>
+            <form name="travel-form" id="travel-form">
+                <div class="name-container">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name">
+                </div>
+
+                <div class="age-container">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" class="age-input">
+                </div>
+
+                <div class="gender-container">
+                    <label for="gender">Gender:</label>
+                    <label>
+                        Male<input type="radio" name="gender" value="Male">
+                    </label>
+                    <label>
+                        Female<input type="radio" name="gender" value="Female">
+                    </label>
+                </div>
+
+                <div class="destination-container">
+                    <label for="destination">Destination:</label>
+                    <select name="destination">
+                        <option>Los Angeles</option>
+                        <option>Atlanta</option>
+                        <option>Orlando</option>
+                    </select>
+                </div>
+
+                <div class="diet-container">
+                    <span>Diet:</span>
+                    <div class="diet-choices">
+                        <div>
+                            <span>Vegetarian</span>
+                            <input type="checkbox" name="diet" value="Vegetarian">
+                        </div>
+                        <div>
+                            <span>Kosher</span>
+                            <input type="checkbox" name="diet" value="Kosher">
+                        </div>
+                        <div>
+                            <span>Lactose Free</span>
+                            <input type="checkbox" name="diet" value="Lactose Free">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button id="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

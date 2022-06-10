@@ -1,0 +1,66 @@
+body {
+    background-color: lightslategray;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.travel-header {
+    color: snow;
+}
+
+#travel-form {
+    background-color: rgba(255, 250, 250, 0.85);
+    width: 560px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.name-container input,
+.age-input,
+.gender-container input,
+.destination-container select {
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 600px;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+}
+
+.age-input {
+    width: 100px;
+}
+
+.diet-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.diet-choices {
+    margin-left: 10px;
+}
+
+.diet-choices input {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submit-button {
+    font-size: 14px;
+    padding: 6px;
+}
