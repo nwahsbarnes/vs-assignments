@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #D89E6D;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    background-color: #824C41;
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.business-header {
+    color: #FBD000;
+    margin: 0px;
+    text-shadow: 2px 2px #6A0400;
+}
+
+.mario-coin {
+    width: 24px;
+    height: 24px;
+}
+
+.npc-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    height: 100%;
+    background-color: rgba(130, 76, 65, 0.25);
+    border-radius: 5px;
+    border: 1px solid #824C41;
+}
+
+.npc-title > span {
+    flex-grow: 1;
+}
+
+.coin-container {
+    display: flex;
+}
+
+.coin-amount {
+    margin: 0px;
+    padding: 0px;
+}
+
+.npc-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.npc-image {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin: 10px;
+}
+
+.coin-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.coin-input > input {
+    width: auto;
+    text-align: right;
+    margin-left: 5px;
+}
+
+.card-containers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #824C41;
+    color: #FBD000;
+    font-family: cursive;
+    padding: 20px;
+    position: sticky;
+    top: 100vh;
+}
+
+footer a,
+footer a:visited,
+footer a:active,
+footer a:hover,
+footer a:link {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#calc-button {
+    background-color: #824c41;
+    border: 2px solid #824C41;
+    border-radius: 3px;
+    color: #FBD000;
+    font-family: 'Press Start 2P', cursive;
+    width: 400px;
+    height: 25px;
+}
+
+#calc-button:hover {
+    background-color: rgba(130, 76, 65, 0.25);
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.total-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+
+.total-container img {
+    width: 22px;
+    height: 22px;
+}
