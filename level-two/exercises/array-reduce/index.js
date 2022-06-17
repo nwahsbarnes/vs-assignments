@@ -96,7 +96,37 @@ var voters = [
 ];
 
 function voterResults(arr) {
-    // too confusing of a question, dnd. need age ranges
+    return arr.reduce((final, obj) => {
+        // 18-25
+        if (obj.age >= 18 && obj.age <= 25) {
+            final.numYoungPeople++;
+            if (obj.voted) {
+                final.numYoungVotes++;
+            }
+        }
+        // 26-35
+        if (obj.age >= 26 && obj.age <= 35) {
+            final.numMidsPeople++;
+            if (obj.voted) {
+                final.numMidVotesPeople++;
+            }
+        }
+        // 36-55
+        if (obj.age >= 36 && obj.age <= 55) {
+            final.numOldsPeople++;
+            if (obj.voted) {
+                final.numOldVotesPeople++;
+            }
+        }
+        return final;
+    }, {
+        numYoungVotes: 0,
+        numYoungPeople: 0,
+        numMidVotesPeople: 0,
+        numMidsPeople: 0,
+        numOldVotesPeople: 0,
+        numOldsPeople: 0
+    });
 }
 
 console.log(voterResults(voters)); // Returned value shown below:
