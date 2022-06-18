@@ -1,0 +1,62 @@
+{
+    "appetizers": [
+        {
+            "name": "Mozzarella sticks",
+            "ingredients": ["Cheese", "Bread"],
+            "description": "A tasty mozzarella stick."
+        },
+        {
+            "name": "Chicken wings",
+            "ingredients": ["Chicken wings"],
+            "description": "Some chicken wants these back."
+        }
+    ],
+    "coldSandwiches": [
+        {
+            "name": "Turkey sandwich",
+            "ingredients": ["Turkey", "Bread", "Cheese", "Mayonaise"],
+            "description": "Gobble."
+        },
+        {
+            "name": "Chicken sandwich",
+            "ingredients": ["Chicken", "Wheat bread", "Mayonaise", "Dijon mustard"],
+            "description": "Has some heat."
+        }
+    ],
+    "hotSandwiches": [
+        {
+            "name": "Roast beef sandwich",
+            "ingredients": ["Roast beef", "Bread", "Pepperjack cheese", "Mayonaise"],
+            "description": "Delicious."
+        },
+        {
+            "name": "Hamburg sandwich",
+            "ingredients": ["Hamburger meat", "Nut bread", "Ketchup"],
+            "description": "Grandpa's hamburg sandwich"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Ice cream",
+            "ingredients": ["Ice cream"],
+            "description": "Cold."
+        },
+        {
+            "name": "Red velvet cake",
+            "ingredients": ["Red velvet cake"],
+            "description": "Wow so good."
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Water",
+            "ingredients": ["Water"],
+            "description": "Stay hydrated."
+        },
+        {
+            "name": "Diet water",
+            "ingredients": ["Magic spell", "Water"],
+            "description": "For those on a diet."
+        }
+    ]
+}
