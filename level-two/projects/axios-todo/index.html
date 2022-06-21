@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="left-container">
+            <div class="add-item-container">
+                <h1>Add ToDo:</h1>
+                <form name="todo-add-form" class="todo-form">
+                    <label for="add-title">Title:</label>
+                    <input name="add-title" type="text">
+    
+                    <label for="add-completed">Completed:</label>
+                    <select name="add-completed">
+                        <option value="false">False</option>
+                        <option value="true">True</option>
+                    </select>
+    
+                    <label for="add-description">Description:</label>
+                    <input name="add-description" type="text">
+    
+                    <label for="add-img">Img url:</label>
+                    <input name="add-img" type="text">
+    
+                    <label for="add-price">Price:</label>
+                    <input name="add-price" type="number">
+                    <button name="submit" id="submit-form-button">Add Item</button>
+                </form>
+            </div>
+        </div>
+    
+    
+        <div class="right-container">
+            <div id="todo-list"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
