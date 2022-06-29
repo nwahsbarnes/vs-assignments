@@ -1,0 +1,48 @@
+.post-subtitle {
+    font-weight: 300;
+}
+
+.blog-post-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.blog-post-card:hover {
+    color: #7004d4;
+}
+
+.post-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.post-subtitle {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.post-meta {
+    font-family: "Lora", "Open sans", sans-serif;
+    font-size: 14px;
+}
+
+hr {
+    background-color: #dee2e6;
+    opacity: 1;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+    height: 1px;
+}
+
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}

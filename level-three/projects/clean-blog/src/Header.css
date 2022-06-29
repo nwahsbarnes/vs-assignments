@@ -1,0 +1,33 @@
+.header {
+    background-image: url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 50vh;
+    font-weight: bold;
+}
+
+.header-layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-title {
+    font-size: 72px;
+    margin-bottom: 0;
+}
+
+.header-title-description {
+    font-weight: normal;
+}
+
+.header-title,
+.header-title-description
+ {
+    text-align: center;
+    color: #fff;
+}

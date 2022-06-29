@@ -1,0 +1,47 @@
+.main-nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+.nav-container a {
+    align-self: center;
+    color: #fff;
+}
+
+.nav-container a:hover {
+    color: #c2c2c2;
+}
+
+.nav-container a,
+.nav-container a:hover,
+.nav-container a:visited,
+.nav-container a:active {
+    text-decoration: none;
+}
+
+.nav-right-container {
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-right {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-right > li {
+    padding: 20px;
+}
