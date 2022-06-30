@@ -1,0 +1,32 @@
+.friend-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-container {
+    display: flex;
+    background-color: bisque;
+    margin-top: 20px;
+}
+
+.friend-name {
+    font-size: 32px;
+    align-self: center;
+    margin-left: 25px;
+}
+
+.friend-age {
+    font-size: 32px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.pet-list-container {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.pet-list {
+    margin-left: 25px;
+}

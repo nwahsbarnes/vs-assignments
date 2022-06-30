@@ -1,0 +1,15 @@
+.pet-container {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.pet-name {
+    text-transform: capitalize;
+}
+
+.pet-breed {
+    text-transform: capitalize;
+    font-style: italic;
+    align-self: center;
+    margin-left: 10px;
+}
