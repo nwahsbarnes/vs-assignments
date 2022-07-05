@@ -1,0 +1,30 @@
+.badge {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.badge-header {
+    background-color: purple;
+    color: snow;
+    padding: 5px;
+    width: 100%;
+}
+
+.badge-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.badge-content > span {
+    flex-basis: 45%;
+    flex-grow: 1;
+}
+
+.about {
+    padding: 20px;
+    border: 1px solid black;
+    flex-basis: 100%;
+}
