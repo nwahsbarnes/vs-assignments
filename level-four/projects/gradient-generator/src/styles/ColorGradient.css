@@ -1,0 +1,15 @@
+.gradient-container {
+    margin-right: 20px;
+}
+
+.color-gradient {
+    width: 500px;
+    height: 350px;
+}
+
+.css-gradient-text {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-top: 10px;
+}
